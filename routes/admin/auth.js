@@ -5,6 +5,7 @@ const signinTemplate = require('../../views/admin/auth/signin');
 const { check, validationResult } = require('express-validator');
 const {checkEmail, checkPassword, checkExistingEmail, checkExistingPassword} = require('./validators');
 const {handleErrors} = require('./middlewares');
+const timers = require("timers");
 
 const router = express.Router();
 
@@ -28,7 +29,12 @@ router.post('/signup', [checkEmail, checkPassword], handleErrors(signupTemplate)
 
 router.get('/signout', (req, res) => {
     req.session = null;
-    res.send("Signed Out");
+    // res.send("Signed Out");
+    // for (var i=0; i < 100000; i++){
+    //     //
+    // }
+
+    res.redirect("/admin/products")
 });
 
 router.get('/signin', (req, res) => {
