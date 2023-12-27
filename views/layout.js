@@ -29,11 +29,6 @@ module.exports = ({ content }) => {
                 <div>
                   <ul class="social">
                     <li><a href="/admin/products">Профиль</i></a></li>
-<!--                    <li><a href=""><i class="fab fa-facebook"></i></a></li>-->
-<!--                    <li><a href=""><i class="fab fa-twitter"></i></a></li>-->
-<!--                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>-->
-<!--                    <li><a href=""><i class="fab fa-dribbble"></i></a></li>-->
-<!--                    <li><a href=""><i class="fab fa-google-plus"></i></a></li>-->
                   </ul>
                 </div>
               </div>
